@@ -1,4 +1,4 @@
-var utilities = require('lib.js');
+var utilities = require('./lib.js');
 module.exports = utilities;
 
 Object.keys(utilities).forEach(function(name, fn) {

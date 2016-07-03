@@ -1,5 +1,5 @@
 /// Import all methods into an object
-var utilities = require('lib.js');
+var utilities = require('./lib.js');
 
 /// Prepend a `ctx` as the first argument
 /// Methods were expecting the `this` to be a `CanvasRenderingContext2D`
