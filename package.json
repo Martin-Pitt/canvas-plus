@@ -1,0 +1,19 @@
+{
+  "name": "canvas-plus",
+  "version": "1.0.0",
+  "description": "Extend HTML5 Canvas with practical and high level methods that were missing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "canvas",
+    "utilities",
+    "rounded",
+    "dashed",
+    "line",
+    "rotate"
+  ],
+  "author": "Martin Pitt <martin.r.pitt@gmail.com> (http://martinpitt.co.uk/)",
+  "license": "MIT"
+}
