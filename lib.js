@@ -1,4 +1,4 @@
-export function dashedLine (x0, y0, x1, y1, dash, gap) {
+module.exports.dashedLine = function dashedLine (x0, y0, x1, y1, dash, gap) {
     if(dash == undefined) dash = 2;
 	if(gap == undefined) gap = 2;
 	var dx = x1 - x0;
@@ -28,7 +28,7 @@ export function dashedLine (x0, y0, x1, y1, dash, gap) {
     }
 };
 
-export function roundedRect (x, y, w, h, r) {
+module.exports.roundedRect = function roundedRect (x, y, w, h, r) {
 	this.moveTo(x + r, y);
 	this.arcTo(x + w, y, x + w, y + r, r);
 	this.arcTo(x + w, y + h, x + w - r, y + h, r);
@@ -36,7 +36,7 @@ export function roundedRect (x, y, w, h, r) {
 	this.arcTo(x, y, x + r, y, r);
 };
 
-export function rotateAt (x, y, a) {
+module.exports.rotateAt = function rotateAt (x, y, a) {
     this.translate(x, y);
     this.rotate(a);
     this.translate(-x, -y);

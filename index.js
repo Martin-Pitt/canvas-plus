@@ -1,5 +1,5 @@
-import * as utilities from 'lib.js';
-export default utilities;
+var utilities = require('lib.js');
+module.exports = utilities;
 
 Object.keys(utilities).forEach(function(name, fn) {
 	CanvasRenderingContext2D.prototype[name] = fn;
