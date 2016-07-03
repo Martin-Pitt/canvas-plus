@@ -1,6 +1,6 @@
 {
   "name": "canvas-plus",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Extend HTML5 Canvas with practical and high level methods that were missing",
   "main": "index.js",
   "scripts": {
