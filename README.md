@@ -1,8 +1,7 @@
 # canvas-plus
+Extend HTML5 Canvas with practical and high level methods that were missing
 
-## Extend HTML5 Canvas with practical and high level methods that were missing
-
-## Install
+## Install
 
 	npm install canvas-plus
 
@@ -54,9 +53,9 @@ ctx.stroke();
 
 ## Documentation
 
-### dashedLine (x0, y0, x1, y1, dash, gap)
+### dashedLine (x0, y0, x1, y1, dash, gap)
 
-* Start coordinates of line (x0, y0)
+* Start coordinates of line (x0, y0)
 * End coordinates of line (x1, y1)
 * Length of a solid dash (dash)
 * Length of gaps between dashes (gap)
@@ -64,7 +63,7 @@ ctx.stroke();
 Draws a dashed line, by using `moveTo` and `lineTo` to create small path segments in a straight line from A to B.
 
 
-### roundedRect (x, y, w, h, r)
+### roundedRect (x, y, w, h, r)
 
 * Position of top left edge (x, y)
 * Size of the rect (w, h)
@@ -75,7 +74,7 @@ Draws a rect with rounded corners using `moveTo`, `lineTo` and `arcTo` to create
 Keep in mind that no limits are in place on the radius, so you might get corrupt shapes by drawing corners larger than the size of the rect. I'd ideally like to have an implementation as similar as possible to `border-radius`; Feel free to create an issue with implementation notes or write a pull request if you can figure out how to get it close to the CSS spec :)
 
 
-### rotateAt (x, y, a)
+### rotateAt (x, y, a)
 
 * Axis position to rotate around (x, y)
 * Angle in radians for rotation (a)
@@ -89,8 +88,7 @@ This, albeit simple, method makes rotating around arbitrary positions on the can
 
 
 
-## Requirements
+## Requirements
 
-* `canvas-plus` expects ES6 modules syntax.
 * If your extending the prototype, then the `Canvas2DRenderingContext` is expected as a global
 * In general expects the `Canvas2DRenderingContext` interface to work on as a context
